@@ -20,7 +20,7 @@ const App = () => {
       }
       else{
         console.log("Logged Out");
-        navigate('/login');
+        navigate('/netflix/login');
       }
     })
   },[])
@@ -32,8 +32,8 @@ const App = () => {
       <ToastContainer theme='dark'/>
       <Routes>
         <Route path='/netflix' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/player/:id' element={<Player />} />
+        <Route path='/netflix/login' element={<Login />} />
+        <Route path='/netflix/player/:id' element={<Player />} />
         
       </Routes>
     </div>
